@@ -19,6 +19,12 @@
   "version": "0.1.0",
   "devDependencies": {
     "@babel/preset-react": "^7.16.0",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "jest": "^27.3.1",
     "webpack-dev-server": "^3"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
