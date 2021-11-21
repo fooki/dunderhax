@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Switch,  BrowserRouter, Routes, Route } from 'react-router-dom';
-import MainMenu from './MainMenu'
+import Main from './Main'
 import NewGame from './NewGame'
 import JoinGame from './JoinGame'
 
@@ -9,12 +9,18 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="games">
-          <Route path="new" element={<NewGame />} />
-          <Route path=":id" element={<JoinGame />} />
-        </Route>
-        <Route path="/*" element={<MainMenu />} />
+        <Route path="/*" element={<Main />} />
       </Routes>
     </BrowserRouter>
+
+    // Nickname page -> game page
+    // game states:
+    //   - waiting to join
+    //   - warmup
+    //   - haxing
+    //   - waiting for submission
+    //   - finished
+    //   - failed
+
   )
 }
