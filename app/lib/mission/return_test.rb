@@ -32,7 +32,7 @@ TEXT
     private
 
     def command(input)
-      "docker run --ulimit cpu=2 --rm -a STDIN -a STDOUT -a STDERR -i ruby ruby 2>&1"
+      "docker run --ulimit cpu=2 --network none --rm -a STDIN -a STDOUT -a STDERR -i ruby ruby 2>&1"
     end
 
     def epilogue
