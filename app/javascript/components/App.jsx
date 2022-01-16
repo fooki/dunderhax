@@ -12,17 +12,5 @@ export default function App() {
         <Route path="/*" element={<Main />} />
       </Routes>
     </BrowserRouter>
-
-    // Nickname page -> game page
-    // game states:
-    //   - waiting to join
-    //   - warmup
-    //   - haxing
-    //   - waiting for submission
-    //   - finished
-    //   - failed
-
-
-
   )
 }

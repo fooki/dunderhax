@@ -45,9 +45,11 @@
     "@testing-library/dom": "^8.11.2",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
     "@webpack-cli/serve": "^1.6.0",
     "jest": "^27.4.7",
     "jest-dom": "^4.0.0",
+    "user-event": "^4.0.0",
     "webpack-dev-server": "^4.7.3"
   },
   "resolutions": {
