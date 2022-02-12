@@ -8,10 +8,14 @@ import "./application.css"
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from '../components/App'
+import { subscribe } from '../channels/game_channel';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <App/>,
     document.body.appendChild(document.createElement('div')),
-  )
+  );
 })
+
+const connected = subscribe();
+//window.GameChannel
